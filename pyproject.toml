@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "blurry-plugin-blur-blurry-name"
+version = "0.1.0"
+description = "A simple plugin to blur 'Blurry' in the Blurry documentation"
+authors = ["John Franey <1728528+johnfraney@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "blurry_plugin_blur_blurry_name"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+blurry-cli = "^0.1.0"
+mistune = "^3.0.0rc5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."blurry.mistune_plugins"]
+blur_blurry_name = 'blurry_plugin_blur_blurry_name:blur_blurry_name'
