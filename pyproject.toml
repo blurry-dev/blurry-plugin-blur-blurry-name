@@ -16,5 +16,5 @@ mistune = "^3.0.0rc5"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry.plugins."blurry.mistune_plugins"]
+[tool.poetry.plugins."blurry.markdown_plugins"]
 blur_blurry_name = 'blurry_plugin_blur_blurry_name:blur_blurry_name'
