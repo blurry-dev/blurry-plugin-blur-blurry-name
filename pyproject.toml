@@ -9,7 +9,7 @@ packages = [{include = "blurry_plugin_blur_blurry_name"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-blurry-cli = "^0.1.0"
+blurry-cli = "*"
 mistune = "^3.0.0rc5"
 
 [build-system]
